@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申请空寝室</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
+    <!--自写css-->
+    <link href="css/to_changecss.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="middle " id="middle">
+    <form>
+
+        <div class="form-group change_input">
+            <label>寝室号</label>
+            <input type="text" class="form-control" id="room" placeholder="请输入寝室号">
+        </div>
+
+        <div class="form-group change_input">
+            <label>学号</label>
+            <input type="text" class="form-control" id="id" placeholder="请输入学号" onfocus="this.blur()">
+        </div>
+
+        <div class="form-group change_input">
+            <label>名字</label>
+            <input type="text" class="form-control" id="name" placeholder="请输入名字" onfocus="this.blur()">
+        </div>
+
+
+        <div class=" change_input">
+            <label>申请理由</label>
+            <textarea id="reason" class="form-control" rows="5" placeholder="申请交换寝室的理由"></textarea>
+        </div>
+
+    </form>
+</div>
+
+<div>
+    <div style="margin-left:120px;margin-top: 20px;float: left">
+        <input id="to" class="btn btn-default" type="submit" value="提交">
+    </div>
+
+</div>
+<div id="alert_login" class="alert-danger alert alert-login"
+           style="position: relative; top: 52%; margin: 20px auto;width: 500px;height: 50px;">
+</div>
+</div>
+<script src="js/js.cookie.js"></script>
+<script src="js/Change.js"></script>
+<!-- yes -->
+</body>
+</html>

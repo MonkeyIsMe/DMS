@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--自写CSS-->
+    <link rel="stylesheet" href="css/man-maincss.css" type="text/css">
+
+    <script type="text/javascript" src="js/man_mainjs.js"></script>
+
+</head>
+<body>
+<div class="contain" id="contain">
+    <div class="banner" id="banner">
+        <img src="images/bg.jpg" class="cbg">
+        <div class="cp1">宿舍管理系统</div>
+        <input id="out" class="btn" type="submit" value="登出" style="margin-top: 120px;background-color: white;position:absolute;margin-left: 1480px">
+    </div>
+
+    <div class="middle" id="middle">
+        <div class="left" id="left">
+
+            <div class="list-group left-list">
+                <a href="#" class="list-group-item" id="list_tbl1" onclick="MenuDisplay_1()">宿舍管理功能</a>
+
+                <table id="table_1" class="table_1">
+                    <tbody>
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="manage_housekeeping" href="#" onclick="add_task()">内务管理</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Smallmenu list-group-item">
+                            <a class="manage_check" href="#" onclick="add_attendance()">考勤管理</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+                <a href="#" class="list-group-item" id="list_tbl2" onclick="MenuDisplay_2()">发布公告功能</a>
+                <table id="table_2" class="table_2">
+                    <tbody>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="lost_thing" href="#" onclick="add_lost()">失物招领</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="info_know" href="#" onclick="add_information()">信息通知</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+                <a href="#" class="list-group-item" id="list_tbl3" onclick="MenuDisplay_3()">信息录入功能</a>
+
+                <table id="table_3" class="table_3">
+                    <tbody>
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="people_to_come" href="#" onclick="add_migrant()">外来人员信息记录</a>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="student_count" href="#" onclick="add_stu()">学生信息统计</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="student_count" href="#" onclick="add_man()">添加管理员信息</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="student_count" href="#" onclick="add_room()">添加房间信息</a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <a href="#" class="list-group-item" id="list_tbl4" onclick="add_pay()">水电费信息管理功能</a>
+
+                <a href="#" class="list-group-item" id="list_tbl5" onclick="MenuDisplay_4()">信息查询功能</a>
+
+                <table id="table_4" class="table_3">
+                    <tbody>
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="people_to_come" href="#" onclick="check_stranger()">外来人员信息查询</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="allow_room_change" href="#" onclick="check_change()">交换宿舍信息查询</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="student_count" href="#" onclick="update_student()">学生信息更新</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="student_count" href="#" onclick="check_student()">学生信息查询</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="student_count" href="#" onclick="check_fix()">维修信息查询</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="student_count" href="#" onclick="check_infor()">公告信息更新</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="Smallmenu list-group-item list-group left-list">
+                            <a class="student_count" href="#" onclick="delete_stu()">更新离校学生</a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="right" id="right">
+            <IFRAME src="migrants_count.html" id="migrant_count" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+
+            <IFRAME src="stu_count.html" id="stu_count" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+
+            <IFRAME src="information_notice.html" id="information_notice" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+
+            <IFRAME src="lost_thing.html" id="lost_thing" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+            <IFRAME src="add_task.html" id="task" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+            <IFRAME src="add_attendance.html" id="information" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+
+            <IFRAME src="QueryAllStranger" id="checkstranger" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+
+            <IFRAME src="QueryChange" id="checkchange" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+            <IFRAME src="UpdateStudent.html" id="updatestudent" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+            <IFRAME src="CheckStudent.html" id="checkstudent" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+
+            </IFRAME>
+            <IFRAME src="QueryFix" id="checkfix" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+            </IFRAME>
+
+            <IFRAME src="addpay.html" id="addpay" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+            </IFRAME>
+            <IFRAME src="ManQueryInfor" id="updateinfor" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+            </IFRAME>
+
+            <IFRAME src="DeleteStudent.html" id="deletestudent" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+            </IFRAME>
+
+            <IFRAME src="addmanager.html" id="addmanager" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+            </IFRAME>
+
+            <IFRAME src="addroom.html" id="addroom" frameBorder=1 width="1200px"  height="590px" marginwidth="80px" style="display: none">
+            </IFRAME>
+        </div>
+
+    </div>
+
+    <div class="foot" id="foot">
+
+    </div>
+
+</div>
+<script src="js/loginout.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更新个人信息</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--自写CSS-->
+    <link rel="stylesheet" href="css/stu-maincss.css" type="text/css">
+
+</head>
+<body>
+<div class="cbanner" id="ibanner">
+    <div class="banner" id="banner">
+        <img src="images/bg.jpg" class="cbg">
+        <div class="cp1">宿舍管理系统</div>
+        <div class="hint" id="hint">
+
+        </div>
+    </div>
+    <div class="bar" id="bar">
+        <nav class="navbar navbar-default nav-justified nav-style" role="navigation">
+            <div>
+                <ul class="nav navbar-nav center-block" style="margin-left: 60px">
+                    <li><a href="stu-main.html">主页</a></li>
+                    <li><a href="to-choose.html">选宿舍</a></li>
+                    <li><a href="QueryPay.jsp" >缴纳水电费</a></li>
+                    <li><a href="to-change.html" >申请交换宿舍</a></li>
+                    <li><a href="to-repair.html" >申请维修</a></li>
+                    <li><a href="QueryInformation.jsp" >查看公告信息</a></li>
+                    <li style="margin-left: 760px"><a href="UpdateMyinfo.html">更新信息</a></li>
+                </ul>
+                <input id="out" class="btn" type="submit" value="登出" style="margin-top: 6px;background-color: white">
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="center">
+    <form class="center">
+
+        <div class="form-group change_input center">
+            <label>邮箱</label>
+            <input type="text" class="form-control" id="stu_up_email" placeholder="请输入你的邮箱">
+        </div>
+
+        <div class="form-group change_input center">
+            <label>电话</label>
+            <input type="text" class="form-control" id="stu_tele_up_num" placeholder="请输入你的电话号码">
+        </div>
+
+        <div class="form-group change_input center">
+            <label>密码</label>
+            <input type="password" class="form-control" id="stu_up_password" placeholder="请输入你的密码">
+        </div>
+    </form>
+    <div style="margin-left: 48%;margin-top: 20px">
+        <input id="updateinfo" class="btn btn-default" type="submit" value="提交">
+    </div>
+</div>
+<div id="alert_login" class="alert-danger alert alert-login"
+     style="position: relative; top: 52%; margin: 20px auto;width: 500px;height: 50px;">
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+<script src="js/js.cookie.js"></script>
+<script src="js/updateinfo.js"></script>
+<!-- yes -->
+</body>
+</html>

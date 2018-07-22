@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+          
+          
+
+<!-- package属性：填写一个包名 -->
+<hibernate-mapping>
+<class name="com.dms.model.Stranger" table="Stranger">
+
+   <!-- id用来配置主键属性 column表示表中的主键列名-->
+   <id name="s_id">
+   <generator class="identity"></generator>
+   </id>
+   
+   <property name="st_id" column="st_id" ></property>
+   <property name="st_name" column="st_name" ></property>
+   <property name="st_to_room" column="st_to_room"></property>
+   <property name="st_to_name" column="st_to_name"></property>
+   <property name="st_telephone" column="st_telephone"></property>
+   <property name="st_date" column="st_date"></property>
+   <property name="st_people_num" column="st_people_num"></property>
+   <property name="st_reason" column="st_reason"></property>
+
+</class>
+</hibernate-mapping>

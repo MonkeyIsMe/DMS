@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交换寝室</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--导入bootstrap核心样式文件-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
+    <!--自写css-->
+    <link href="css/allusecss.css" rel="stylesheet">
+    <script type="text/javascript" src="js/to_change.js"></script>
+
+</head>
+<body>
+        <div class="bar" id="bar">
+            <nav class="navbar navbar-default nav-justified nav-style" role="navigation">
+                <div>
+                    <ul class="nav navbar-nav center-block" style="margin-left: 60px">
+                        <li><a href="stu-main.html">主页</a></li>
+                        <li><a href="to-choose.html">选宿舍</a></li>
+                        <li><a href="QueryPay.jsp" >缴纳水电费</a></li>
+                        <li><a href="to-change.html" >申请交换宿舍</a></li>
+                        <li><a href="to-repair.html" >申请维修</a></li>
+                        <li><a href="QueryInformation" >查看公告信息</a></li>
+                        <li style="margin-left: 750px"><a href="UpdateMyinfo.html">更新信息</a></li>
+                    </ul>
+                    <input id="out" class="btn" type="submit" value="登出" style="margin-top: 6px;background-color: white">
+                </div>
+            </nav>
+        </div>
+
+
+<div class="middle" id="middle">
+
+    <div class="middle_left">
+
+    </div>
+
+    <div class="middle_center">
+
+        <div style="float: left;margin-left: 50px;margin-top: 5px;margin-bottom: 20px">
+            <input class="btn btn-default" type="submit" value="申请交换宿舍" onclick="testDisplay_1()">
+        </div>
+
+        <div style="float: left;margin-left: 50px;margin-top: 5px;margin-bottom: 20px">
+            <input class="btn btn-default" type="submit" value="查询空宿舍" onclick="testDisplay_2()">
+        </div>
+
+        <IFRAME src="to_change_1.html" id="html_1" frameBorder=1 width="500px"  height="660px" marginwidth="80px" style="display: none">
+
+        </IFRAME>
+        <IFRAME src="StuQueryRoom" id="html_2" frameBorder=1 width="500px"  height="660px" marginwidth="80px" style="display: none">
+
+        </IFRAME>
+
+    </div>
+
+    <div class="middle_right">
+
+    </div>
+
+</div>
+<div class="foot" id="foot">
+
+</div>
+</div>
+</body>
+</html>

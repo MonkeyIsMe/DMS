@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+          
+          
+
+<!-- package属性：填写一个包名 -->
+<hibernate-mapping>
+<class name="com.dms.model.Payment" table="Payment">
+
+   <!-- id用来配置主键属性 column表示表中的主键列名-->
+   <id name="pay_cnt" column="pay_cnt">
+   <generator class="identity" />
+   </id>
+   
+   
+   <property name="pay_description" column="pay_description" ></property>
+   <property name="pay_money" column="pay_money"></property>
+   <property name="pay_room_id" column="pay_room_id"></property>
+   <property name="pay_body" column="pay_body"></property>
+ 
+   
+
+</class>
+</hibernate-mapping>

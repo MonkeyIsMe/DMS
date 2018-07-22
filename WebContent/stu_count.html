@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息统计</title>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--自写CSS-->
+    <link rel="stylesheet" href="css/stu_count_css.css" type="text/css">
+
+</head>
+<body>
+<div class="input">
+    <div class="left">
+        <form>
+            <div class="form-group change_input">
+                <label>姓名</label>
+                <input type="text" class="form-control" id="stu_name" placeholder="请输入学生姓名">
+            </div>
+
+            <div class="form-group change_input">
+                <label>学号</label>
+                <input type="text" class="form-control" id="stu_id" placeholder="请输入学生学号">
+            </div>
+
+           <div class="form-group change_input">
+                <label>联系电话</label>
+                <input type="text" class="form-control" id="stu_tele_num" placeholder="请输入电话号码">
+            </div>
+
+            <div class="form-group change_input">
+                <label>密码</label>
+                <input type="text" class="form-control" id="stu_password" placeholder="请输入邮箱">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="right">
+        <form>
+
+            <div class="form-group change_input">
+                <label>登记日期</label>
+                <input type="text" class="form-control" id="stu_in_time" placeholder="请输入日期">
+            </div>
+
+            <div class="form-group change_input">
+                <label>院系</label>
+                <input type="text" class="form-control" id="stu_yard" placeholder="请输入所在院系">
+            </div>
+
+            <div class="form-group change_input">
+                <label>专业</label>
+                <input type="text" class="form-control" id="stu_marjor_in" placeholder="请输入所在专业">
+            </div>
+
+            <div class="form-group change_input">
+                <label>班级</label>
+                <input type="text" class="form-control" id="stu_class_id" placeholder="请输入所在班级">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <div style="margin-left:45%;margin-top: 20px">
+            <input id="to" class="btn btn-default" type="submit" value="提交">
+        </div>
+    </div>
+</div>
+ 
+
+<div id="alert_login" class="alert-danger alert alert-login"
+           style="position: relative; top: 52%; margin: 350px auto;width: 500px;height: 50px;">
+</div>
+<script src="js/Student.js"></script>
+</body>
+</html>

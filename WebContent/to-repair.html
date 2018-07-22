@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申请维修</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
+    <!--自写css-->
+    <link href="css/to-repaircss.css" rel="stylesheet">
+</head>
+<body>
+        <div class="bar" id="bar">
+            <nav class="navbar navbar-default nav-justified nav-style" role="navigation">
+                <div>
+                    <ul class="nav navbar-nav center-block" style="margin-left: 60px">
+                        <li><a href="stu-main.html">主页</a></li>
+                        <li><a href="to-choose.html">选宿舍</a></li>
+                        <li><a href="QueryPay.jsp" >缴纳水电费</a></li>
+                        <li><a href="to-change.html" >申请交换宿舍</a></li>
+                        <li><a href="to-repair.html" >申请维修</a></li>
+                        <li><a href="QueryInformation">查看公告信息</a></li>
+                        <li style="margin-left: 760px"><a href="UpdateMyinfo.html">更新信息</a></li>
+                    </ul>
+                    <input id="out" class="btn" type="submit" value="登出" style="margin-top: 6px;background-color: white">
+                </div>
+            </nav>
+        </div>
+
+
+<div class="middle " id="middle">
+    <form>
+        <div class="form-group">
+            <label>寝室号</label>
+            <input type="text" class="form-control" id="repair_room" placeholder="请输入寝室号" onfocus="this.blur()">
+        </div>
+
+        <div class="form-group">
+            <label>学号</label>
+            <input type="text" class="form-control" id="id" placeholder="请输入学号" onfocus="this.blur()">
+        </div>
+
+        <div class="form-group">
+            <label>名字</label>
+            <input type="text" class="form-control" id="name" placeholder="请输入名字" onfocus="this.blur()">
+        </div>
+
+
+        <div>
+            <label>问题描述</label>
+            <textarea id="reason" class="form-control" rows="5" placeholder="请对寝室问题进行描述" style="width: 300px"></textarea>
+        </div>
+
+    </form>
+            <div style="margin-left: 38%;margin-top: 20px">
+            <input id="to" class="btn btn-default" type="submit" value="提交">
+        </div>
+</div>
+<div id="alert_login" class="alert-danger alert alert-login"
+           style="position: relative; top: 52%; margin: 20px auto;width: 500px;height: 50px;">
+</div>
+<div class="foot" id="foot">
+
+</div>
+</div>
+<script src="js/js.cookie.js"></script>
+<script src="js/Fix.js"></script>
+<!-- yes -->
+</body>
+</html>

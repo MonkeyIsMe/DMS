@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询陌生人信息</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--自写CSS-->
+    <link rel="stylesheet" href="css/lost_thing_css.css" type="text/css">
+
+</head>
+<body>
+<div class="center">
+    <form class="center">
+        <div class="form-group change_input center">
+            <label>查询陌生人信息</label>
+            <input id="st_id" type="text" class="form-control" id="info_tittle" placeholder="来访者身份证号码">
+        </div>
+    </form>
+
+    <div style="margin-left: 48%;margin-top: 20px">
+        <input id="checkst" class="btn btn-default" type="submit" value="提交">
+    </div>
+
+    <div style="margin-left: 40%;margin-top: 30px;">
+        <table border="5">
+            <tr>
+                <th style="font-size: 20px;font-family: 微软雅黑">身份证号</th>
+                <th style="font-size: 20px;font-family: 微软雅黑;width: 200px" id="id"></th>
+            </tr>
+            <tr>
+                <th style="font-size: 20px;font-family: 微软雅黑">名字</th>
+                <th style="font-size: 20px;font-family: 微软雅黑" id="name"></th>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;font-family: 微软雅黑">来访寝室号</td>
+                <td style="font-size: 20px;font-family: 微软雅黑" id="room"></td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;font-family: 微软雅黑">来访名字</td>
+                <td style="font-size: 20px;font-family: 微软雅黑" id="to_name"></td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;font-family: 微软雅黑">电话号码</td>
+                <td style="font-size: 20px;font-family: 微软雅黑" id="tele"></td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;font-family: 微软雅黑">日期</td>
+                <td style="font-size: 20px;font-family: 微软雅黑" id="date"></td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;font-family: 微软雅黑">同行人数</td>
+                <td style="font-size: 20px;font-family: 微软雅黑" id="num"></td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;font-family: 微软雅黑">原由</td>
+                <td style="font-size: 20px;font-family: 微软雅黑" id="reason"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+<script src="js/Stranger.js"></script>
+</html>

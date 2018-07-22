@@ -1,0 +1,28 @@
+.input{
+    width: 600px;
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.left{
+    float: left;
+    width: 280px;
+}
+
+.right{
+    margin-left: 40px;
+    float: left;
+    width: 280px;
+}
+
+
+
+#to{
+    float: left;
+}
+
+#come{
+    margin-left: 50px;
+    float: left;
+}

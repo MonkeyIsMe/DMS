@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加管理员信息</title>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--自写CSS-->
+    <link rel="stylesheet" href="css/man-maincss.css" type="text/css">
+    <link rel="stylesheet" href="css/stu_count_css.css" type="text/css">
+
+    <script type="text/javascript" src="js/man_mainjs.js"></script>
+</head>
+<body>
+<div class="input">
+    <form>
+        <div class="form-group change_input">
+            <label>账号</label>
+            <input type="text" class="form-control" id="tea_account" placeholder="请输入管理员账号">
+        </div>
+
+        <div class="form-group change_input">
+            <label>密码</label>
+            <input type="text" class="form-control" id="tea_password" placeholder="请输入管理员密码">
+        </div>
+
+        <div class="form-group change_input">
+            <label>名字</label>
+            <input type="text" class="form-control" id="tea_name" placeholder="请输入管理员名字">
+        </div>
+
+        <div class="form-group change_input">
+            <label>院系</label>
+            <input type="text" class="form-control" id="tea_yard" placeholder="请输入管理者院系">
+        </div>
+
+        <div class="form-group change_input">
+            <label>电话</label>
+            <input type="text" class="form-control" id="tea_tele" placeholder="请输入管理者电话">
+        </div>
+        <div class="form-group change_input">
+            <label>邮箱</label>
+            <input type="text" class="form-control" id="tea_email" placeholder="请输入管理者邮箱">
+        </div>
+
+    </form>
+    <div style="margin-left: 48%;margin-top: 20px">
+        <input id="add" class="btn btn-default" type="submit" value="提交">
+    </div>
+    <div id="alert_login" class="alert-danger alert alert-login"
+     style="position: relative; top: 52%; margin: 20px auto;width: 500px;height: 50px;">
+</div>
+</div>
+<script src="js/addteacher.js"></script>
+</body>
+</html>

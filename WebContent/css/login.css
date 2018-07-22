@@ -1,0 +1,9 @@
+.alert-login {
+    margin: 15px auto;
+    text-align: center;
+    padding-top: 5px;
+    vertical-align: middle;
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+}

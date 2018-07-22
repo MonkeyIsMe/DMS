@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息通知</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--自写CSS-->
+    <link rel="stylesheet" href="css/information_notice_css.css" type="text/css">
+
+</head>
+<body>
+<div class="center">
+    <form class="center">
+        <div class="form-group change_input center">
+            <label>通知的标题</label>
+            <input type="info_tittle" class="form-control" id="info_tittle" placeholder="请输入标题">
+        </div>
+
+        <div class=" change_input center">
+            <label>通知内容</label>
+            <textarea id="info_text" class="form-control" rows="10" placeholder="请输入通知的内容"></textarea>
+        </div>
+    </form>
+            <div style="margin-left: 48%;margin-top: 20px">
+            <input class="btn btn-default" id="notice" type="submit" value="提交">
+        </div>
+</div>
+<div id="alert_login" class="alert-danger alert alert-login"
+     style="position: relative; top: 52%; margin: 20px auto;width: 500px;height: 50px;">
+</div>
+<script src="js/notice.js"></script>
+</body>
+</html>
+<!-- yes -->

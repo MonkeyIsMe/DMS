@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+          
+          
+
+<!-- package属性：填写一个包名 -->
+<hibernate-mapping>
+<class name="com.dms.model.Room" table="Room">
+
+   <!-- id用来配置主键属性 column表示表中的主键列名-->
+
+   
+   <id name="room_id" column="room_id" >
+   <generator class="assigned" />
+   </id>
+   
+   <set name="students" inverse="true" lazy="false">
+     <key column="stu_key_id"></key>
+     <one-to-many class="com.dms.model.Student"/>
+   </set>
+   
+   <property name="room_flag" column="room_flag" ></property>
+   <property name="room_num" column="room_num"></property>
+   <property name="apart_task" column="apart_task"></property>
+   <property name="room_attendance" column="room_attendance"></property>
+
+
+</class>
+</hibernate-mapping>

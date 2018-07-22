@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+          
+          
+
+<!-- package属性：填写一个包名 -->
+<hibernate-mapping>
+<class name="com.dms.model.Change_room" table="Change_room">
+
+   <!-- id用来配置主键属性 column表示表中的主键列名-->
+   <id name="apart_id" column="apart_id">
+   <generator class="increment" />
+   </id>
+   
+   <property name="apart_room_id" column="apart_room_id" ></property>
+   <property name="flag" column="flag" ></property>
+   <property name="apart_stu_id" column="apart_stu_id"></property>
+   <property name="apart_stu_name" column="apart_stu_name"></property>
+   <property name="apart_reason" column="apart_reason"></property>
+
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <title>宿舍管理系统</title>
+
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/login.css" type="text/css">
+    <!-- //Meta-Tags -->
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+<body>
+
+<h1 style="font-family: cursive;font-size: 30px;color: white;margin-top: 100px">宿舍管理系统</h1>
+<div class="container w3layouts agileits" style="width: 500px">
+
+    <div class="login w3layouts agileits" style="margin-left: 25%">
+        <h2 style="margin-left: 28%;font-family: serif;font-size: 30px;color: white;">登录界面</h2>
+        <input type="text" Name="account" placeholder="用户名"  style="width: 250px" id="account">
+        <input type="password" Name="password" placeholder="密码" style="width: 250px" id="password">
+        <div class="form-group">
+            <div class="input-form-group">
+                <div class="form-inline" style="float:left">
+                    <input type="text" class="form-control" id="login-code"
+                           maxlength="4" autocomplete="off" style="width: 80px" placeholder="验证码">
+                    <img src="CodeServlet" class="veri-code" id="code-img" style="margin-left:10px">
+                </div>
+            </div>
+        </div>
+        <ul class="tick w3layouts agileits">
+            <div id="wrap">
+                <input type="radio" name="identity" value="学生"  checked="checked" style="margin-left: 20px;float: left;"/><p style="color: white;float: left;margin-left: 10px">学生<p/>
+                <input type="radio" name="identity" value="管理者"  style="float: left;margin-left: 20px"/><p style="color: white;float: left;margin-left: 10px">管理者<p/>
+            </div>
+        </ul>
+
+        <div class="send-button w3layouts agileits">
+            <input type="submit" value="登 录" style="margin-left: 25%" id="submit-btn">
+        </div>
+        <a style="margin-left: 65px" href="SendCode.html">忘记密码</a>
+    </div>
+    <div style="position: absolute; width: 400px; top: 95%; left: 50%; margin-left: -200px; text-align: center">
+        <p style="color: white; font-size: 16px; font-family: 'Times New Roman'">Copyright © CallMeDad. All rights reserved.</p>
+    </div>
+</div>
+<div id="alert_login" class="alert-danger alert alert-login"
+     style="position: relative; top: 52%; margin: 0 auto;width: 500px;height: 50px">
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+<script src="js/js.cookie.js"></script>
+<script src="js/login.js"></script>
+<script src="js/loginout.js"></script>
+</body>
+<!-- //Body -->
+<!-- yes -->
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选宿舍</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--导入bootstrap核心样式文件-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" />
+    <!--自写css-->
+    <link href="css/to_choosecss.css" rel="stylesheet">
+</head>
+<body>
+                <div class="bar" id="bar">
+            <nav class="navbar navbar-default nav-justified nav-style" role="navigation">
+                <div>
+                    <ul class="nav navbar-nav center-block" style="margin-left: 60px">
+                        <li><a href="stu-main.html">主页</a></li>
+                        <li><a href="to-choose.html">选宿舍</a></li>
+                        <li><a href="QueryPay.jsp" >缴纳水电费</a></li>
+                        <li><a href="to-change.html" >申请交换宿舍</a></li>
+                        <li><a href="to-repair.html" >申请维修</a></li>
+                        <li><a href="QueryInformation" >查看公告信息</a></li>
+                        <li style="margin-left: 750px"><a href="UpdateMyinfo.html">更新信息</a></li>
+                    </ul>
+                    <input id="out" class="btn" type="submit" value="登出" style="margin-top: 6px;background-color: white">
+                </div>
+            </nav>
+        </div>
+
+
+<div class="middle " id="middle">
+
+    <div class="info" id="info">
+        <div style="margin-top: 40px">
+            <div style="float: left;margin-left: 30px">
+                <p style="float: left">姓名:</p>&nbsp;&nbsp;
+                <p style="float: left" id="name"></p>
+            </div>
+            <div style="float: left;margin-left: 30px">
+                <p style="float: left">院系:</p>&nbsp;&nbsp;
+                <p style="float: left" id="yard"></p>
+            </div>
+            <div style="float: left;margin-left: 30px">
+                <p style="float: left">班级:</p>&nbsp;&nbsp;
+                <p style="float: left" id="banji"></p>
+            </div>
+        </div>
+        <div>
+            <div style="float: left;margin-left: 30px">
+                <p style="float: left">专业:</p>&nbsp;&nbsp;
+                <p style="float: left" id="marjor"></p>
+            </div>
+            <div style="float: left;margin-left: 30px">
+                <p style="float: left">寝室:</p>&nbsp;&nbsp;
+                <p style="float: left" id="room"></p>
+            </div>
+            <div style="float: left;margin-left: 30px">
+                <p style="float: left">学号:</p>&nbsp;&nbsp;
+                <p style="float: left" id="stu_id"></p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+            <IFRAME src="QueryRoom" id="checkchange" frameBorder=1 width="1200px"  height="590px" marginwidth="80px">
+
+            </IFRAME>
+    </div>
+
+</div>
+<div class="foot" id="foot">
+
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script src="js/js.cookie.js"></script>
+<script src="js/infor.js"></script>
+<script src="js/chooseroom.js"></script>
+</body>
+</html>

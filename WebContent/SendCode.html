@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发送验证码</title>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--自写CSS-->
+    <link rel="stylesheet" href="css/man-maincss.css" type="text/css">
+    <link rel="stylesheet" href="css/stu_count_css.css" type="text/css">
+
+    <script type="text/javascript" src="js/man_mainjs.js"></script>
+</head>
+<body>
+<div class="input">
+    <form>
+        <div class="form-group change_input">
+            <label>请输入账号</label>
+            <input type="text" class="form-control" id="id" placeholder="请输入您的账号">
+        </div>
+            <div id="wrap">
+                <input type="radio" name="identity" value="学生"  checked="checked" style="margin-left: 20px;float: left;"/><p style="color: black;float: left;margin-left: 10px">学生<p/>
+                <input type="radio" name="identity" value="管理者"  style="float: left;margin-left: 20px"/><p style="color: black;float: left;margin-left: 10px">管理者<p/>
+            </div>
+    </form>
+    <div style="margin-left: 15%;margin-top: 50px;float: left">
+        <input id="to" class="btn btn-default" type="submit" value="提交">
+        <a id="back" href="login.html" class="btn btn-default" type="submit" value="返回" style="margin-left: 20px">返回</a>
+
+    </div>
+
+</div>
+<div id="alert_login" class="alert-danger alert alert-login"
+     style="position: relative; top: 52%; margin: 100px auto;width: 500px;height: 50px;">
+</div>
+</body>
+<script src="js/sendcode.js"></script>
+<!-- yes -->
+</html>

@@ -1,0 +1,38 @@
+.input{
+    width: 600px;
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.left{
+    float: left;
+    width: 280px;
+}
+
+.right{
+    margin-left: 40px;
+    float: left;
+    width: 280px;
+}
+
+
+#to{
+    float: left;
+}
+
+#come{
+    margin-left: 50px;
+    float: left;
+}
+
+
+.alert-login {
+    margin: 15px auto;
+    text-align: center;
+    padding-top: 5px;
+    vertical-align: middle;
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+}

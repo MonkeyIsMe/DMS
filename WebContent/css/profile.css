@@ -1,0 +1,42 @@
+.row{
+    height: 100px;
+    padding: 50px 20px;
+}
+
+.profile-form {
+    padding: 20px 10px 20px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 500px;
+}
+
+.profile-form-inline {
+    height: auto;
+}
+
+.profile-avatar-img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-info-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.profile-left-label {
+    text-align: right;
+}
+
+.profile-submit-btn {
+    width: 150px;
+    margin: 0px auto;
+}
+
+.profile-alert {
+    margin: 0px auto 0px auto;
+    width: 230px;
+}

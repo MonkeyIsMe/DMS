@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+          
+          
+
+<!-- package属性：填写一个包名 -->
+<hibernate-mapping>
+<class name="com.dms.model.Student" table="Student">
+
+   <!-- id用来配置主键属性 column表示表中的主键列名-->
+   <id name="stu_id" column="stu_id">
+   <generator class="assigned" />
+   </id>
+   
+   <many-to-one name="room" class="com.dms.model.Room" column="stu_key_id">
+   </many-to-one>
+   
+   
+   
+   <property name="stu_password" column="stu_password" ></property>
+   <property name="stu_name" column="stu_name"></property>
+   <property name="stu_room_id" column="stu_room_id"></property>
+   <property name="stu_yard" column="stu_yard"></property>
+   <property name="stu_marjor_in" column="stu_marjor_in"></property>
+   <property name="stu_class_id" column="stu_class_id"></property>
+   <property name="stu_in_time" column="stu_in_time"></property>
+   <property name="stu_out_time" column="stu_out_time"></property>
+   <property name="stu_flag" column="stu_flag"></property>
+   <property name="stu_tele_num" column="stu_tele_num"></property>
+   <property name="stu_email" column="stu_email"></property>
+   
+
+</class>
+</hibernate-mapping>

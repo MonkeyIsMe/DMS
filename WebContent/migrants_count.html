@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外来人员信息登记</title>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--自写CSS-->
+    <link rel="stylesheet" href="css/migrants_count_css.css" type="text/css">
+
+</head>
+<body>
+<div class="input">
+    <div class="left">
+        <form>
+            <div class="form-group change_input">
+                <label>姓名</label>
+                <input type="text" class="form-control" id="st_name" placeholder="来访人员姓名">
+            </div>
+
+            <div class="form-group change_input">
+                <label>身份证号</label>
+                <input type="text" class="form-control" id="st_id" placeholder="来访人员身份证号">
+            </div>
+
+            <div class="form-group change_input">
+                <label>访问寝室</label>
+                <input type="text" class="form-control" id="st_to_room" placeholder="请输入寝室号">
+            </div>
+
+            <div class="form-group change_input">
+                <label>访问名字</label>
+                <input type="text" class="form-control" id="st_to_name" placeholder="请输入名字">
+            </div>
+
+
+
+        </form>
+    </div>
+
+    <div class="right">
+        <form>
+            <div class="form-group change_input">
+                <label>联系电话</label>
+                <input type="text" class="form-control" id="st_telephone" placeholder="电话号码">
+            </div>
+
+            <div class="form-group change_input">
+                <label>来访日期</label>
+                <input type="text" class="form-control" id="st_date" placeholder="日期">
+            </div>
+
+
+            <div class="form-group change_input">
+                <label>同行人数</label>
+                <input type="text" class="form-control" id="st_people_num" placeholder="同行的人数">
+            </div>
+
+            <div class="form-group change_input">
+                <label>来访原由</label>
+                <input type="text" class="form-control" id="st_reason" placeholder="来访的原由">
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <div style="margin-left: 45%;margin-top: 20px">
+            <input id="to" class="btn btn-default" type="submit" value="提交">
+        </div>
+
+    </div>
+</div>
+<div id="alert_login" class="alert-danger alert alert-login"
+           style="position: relative; top: 82%; margin: 350px auto;width: 500px;height: 50px;">
+</div>
+<script src="js/Stranger.js"></script>
+</body>
+</html>

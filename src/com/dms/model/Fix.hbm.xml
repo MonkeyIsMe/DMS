@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+          
+          
+
+<!-- package属性：填写一个包名 -->
+<hibernate-mapping>
+<class name="com.dms.model.Fix" table="Fix">
+
+   <!-- id用来配置主键属性 column表示表中的主键列名-->
+   <id name="fix_id" column="fix_id">
+   <generator class="identity"></generator>
+   </id>
+   
+   
+   
+   <property name="fix_cnt" column="fix_cnt"></property>
+   <property name="fix_stu_id" column="fix_stu_id"></property>
+   <property name="fix_stu_name" column="fix_stu_name"></property>
+   <property name="fix_reason" column="fix_reason"></property>
+   <property name="fix_flag" column="fix_flag"></property>
+   <property name="fix_time" column="fix_time"></property>
+   
+</class>
+</hibernate-mapping>

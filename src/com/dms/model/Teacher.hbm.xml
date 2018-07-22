@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+          
+          
+
+<!-- package属性：填写一个包名 -->
+<hibernate-mapping>
+<class name="com.dms.model.Teacher" table="Teacher">
+
+   <!-- id用来配置主键属性 column表示表中的主键列名-->
+   <id name="tea_account" column="tea_account">
+   <generator class="assigned" />
+   </id>
+   
+   
+   <property name="tea_password" column="tea_password" ></property>
+   <property name="tea_name" column="tea_name"></property>
+   <property name="tea_yard" column="tea_yard"></property>
+   <property name="tea_tele_num" column="tea_tele_num"></property>
+   <property name="tea_flag" column="tea_flag"></property>
+   <property name="tea_email" column="tea_email"></property>
+ 
+   
+
+</class>
+</hibernate-mapping>
